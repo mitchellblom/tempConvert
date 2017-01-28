@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converting</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<form>
+		<label for="Temperature">What Sayeth the Mercury?</label>
+		<input type="text" name="units" value="" placeholder="Temperature">
+
+		<label for="Celsius">Celsius</label>
+		<input type="radio" name="units" value="Celsius" placeholder="Degrees">
+
+		<label for="Fahrenheit">Fahreinheit</label>
+		<input type="radio" name="units" value="Fahreinheit" placeholder="Degrees">
+
+		<input type="reset" value="Reset">
+	</form>
+
+	<form>
+		<button type="convert">Convert Temp!</button>
+
+		<label for="Converted Temp">Converted Temp:</label>
+		<input id="newTemp" placeholder="Will appear here"></input>
+	</form>
+
+</body>
+</html>
