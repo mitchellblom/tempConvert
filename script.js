@@ -1,23 +1,41 @@
-var conTemp = document.getElementById("newTemp");
 
-when ( /* cel radio button is selected */ ) {
-	var conTemp = conTemp * (9/5) + 32;
+// Get a reference to the button element in the DOM
+var button = document.getElementById("convert");
+
+// This function should determine which conversion should happen based on which radio button is selected.
+
+function determineConverter (clickEvent) {
+  var units = document.getElementsByName("units");
+  	units.forEach(function(x) {
+  	if (x.checked) {
+  		// if (x.id === celsius) {
+
+  		}
+  	}
+  })
 }
 
-when ( /* far radio button is selected */ ) {
-	var conTemp = (conTemp - 32) * (5/9);
-}
+// when ( units === celsius ) {
+// 	function toFahrenheit () {
+// 	var button = button * (9/5) + 32;
+// 	}	
+// }
 
-newTemp.innerHTML = convertedTemp;
-
-// var dongle = [{image:"images/cookie.png", descrip:'Punxsutawney <br> "winter" <br> $2.50'}
-// ];
-
-//   var productCard = "";
-//   productCard +="<div class='productCard'><img class='productPic' src=" + dongle[i].image + "><p class='lightBox'>" + "<div class='descrip'>" + dongle[i].descrip + "</div>";
-
-
-//   console.log()
+// when ( units === fahrenheit ) {
+// 	function toCelsius () {
+// 	var button = (button - 32) * (5/9);
 // }
 
 
+// Assign a function to be executed when the button is clicked
+button.addEventListener("click", determineConverter);
+
+
+// newTemp.innerHTML = convertedTemp;
+
+
+// For reference to study
+// 
+  	// var isChecked = false;
+  	// isChecked = x.checked;
+  	// console.log(isChecked);
