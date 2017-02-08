@@ -8,25 +8,26 @@
 <body>
 	<form>
 		<label for="Temperature">What Sayeth the Mercury?</label>
+		<br>
 		<input type="text" id="converter" value="" placeholder="Temperature">
-
+		<br>
 		<label for="Celsius">Celsius</label>
 		<input type="radio" name="units" value="celsius" id="cel" placeholder="Degrees">
 
 		<label for="Fahrenheit">Fahreinheit</label>
 		<input type="radio" name="units" value="fahreinheit" id="fah" placeholder="Degrees">
-
+		<br>
 		<input type="reset" value="Reset">
-	</form>
-
-	<form>
-
 
 		<label for="Converted Temp">Converted Temp:</label>
-		<input placeholder="Will appear here" id="newTemp"></input>
+		<div id="tempStyle">
+			<input placeholder="Will appear here" id="newTemp"></input>
+		</div>
+
 	</form>
 
 	<button id="convert">Convert Temp!</button>
+
 
 	<script type="text/javascript" src="script.js"></script>
 
