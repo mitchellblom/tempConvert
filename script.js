@@ -9,6 +9,7 @@ var tempColor;
 var resetButton = document.getElementById("reset");
 
 button.addEventListener("click", determineConverter);
+// console.log(button.addEventListener);
 
 resetButton.addEventListener("click", function() {
 	newTemp.className = "";
@@ -67,9 +68,3 @@ function determineConverter (clickEvent) {
   	}
   });
 }
-
-
-
-
-
-
