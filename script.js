@@ -15,6 +15,14 @@ resetButton.addEventListener("click", function() {
 	newTemp.className = "";
 });
 
+button.addEventListener("keypress", determineConverter);
+document.onkeydown = function() {
+ if (window.event.keyCode === 13) {
+   determineConverter();
+ } 
+}
+
+
 function determineConverter (clickEvent) {
 // declaring a variable and assigning only the radio buttons with the name "units"
   var units = document.getElementsByName("units")
